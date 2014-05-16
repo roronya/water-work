@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>water-work</title>
+    
+    <link href="perfect-scrollbar-0.4.10.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="perfect-scrollbar-0.4.10.with-mousewheel.min.js"></script>
+    <script>
+      $(document).ready(function ($) {
+      $('#log').perfectScrollbar();
+      $('#main-field').perfectScrollbar();
+      $('#sub-field0').perfectScrollbar();
+      $('#sub-field1').perfectScrollbar();
+      $('#sub-field2').perfectScrollbar();
+      $('#sub-field3').perfectScrollbar();
+      $('#sub-field4').perfectScrollbar();
+      });
+    </script>
+  </head>
+  <body>
+    <link href="mystyle.css" rel="stylesheet" type="text/css">
+    
+    <div id="game">
+      <div id = "main-field">
+	<canvas id = "field" width = "5500" height = "8800">
+	  Canvasに対応したブラウザを使ってね
+	</canvas>
+      </div>
+      
+      <div id="hand">
+	<canvas id="hand0" width="55" height="88"></canvas>
+        <canvas id="hand1" width="55" height="88"></canvas>
+        <canvas id="hand2" width="55" height="88"></canvas>
+        <canvas id="hand3" width="55" height="88"></canvas>
+        <canvas id="hand4" width="55" height="88"></canvas>
+        <canvas id="hand5" width="55" height="88"></canvas>
+        <canvas id="hand6" width="27" height="88"></canvas>
+        <canvas id="hand7" width="27" height="88"></canvas>
+      </div>
+
+      <div id="buttons">
+		<canvas id="rotate_button"  width="100" height="50"></canvas>
+		<canvas id="discard_button" width="100" height="50"></canvas>
+		<canvas id="ready_button" width="100" height="50"></canvas>
+      		<canvas id="changemusic_button" width="100" height="50"></canvas>
+		<canvas id="myPlayerId" width="100" height="50"></canvas>
+      </div>
+
+      <div id="sub-fields">
+	<div id="sub-field0">
+          <canvas id="player0-mini-field" width = "1650" height = "2640">
+	    Canvasに対応したブラウザを使ってね
+	  </canvas>
+	</div>
+	
+	<div id="sub-field1">
+          <canvas id="player1-mini-field" width = "550" height = "880">
+	    Canvasに対応したブラウザを使ってね
+	  </canvas>
+	</div>
+
+	<div id="sub-field2">
+	  <canvas id="player2-mini-field" width = "550" height = "880">
+	    Canvasに対応したブラウザを使ってね
+	  </canvas>
+	</div>
+
+	<div id="sub-field3">
+          <canvas id="player3-mini-field" width = "550" height = "880">
+	    Canvasに対応したブラウザを使ってね
+	  </canvas>
+	</div>
+
+	<div id="sub-field4">
+          <canvas id="player4-mini-field" width = "550" height = "880">
+	    Canvasに対応したブラウザを使ってね
+	  </canvas>
+	</div>
+      </div>
+    </div>
+
+    <div id="log">
+      <h2>log</h2>
+      <p>ようこそ。</p>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>

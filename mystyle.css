@@ -1,0 +1,106 @@
+body{
+  background: -webkit-gradient(linear, left top, right bottom, from(#000),
+			       color-stop(0.3, #066),
+			       color-stop(0.5, #066),
+			       color-stop(0.7, #000),
+			       to(#066));
+}
+
+#game{
+  width: 1000px;
+  height:700px;
+  margin-left: auto;
+  margin-right: auto;
+  float:left;
+
+}
+
+#main-field{
+  border: inset 10px #EEE;
+  width:800px;
+  height:480px;
+  float:left;
+  overflow:hidden;
+  position:relative;
+}
+
+#hand{
+  float:left;
+}
+
+#hand0{
+  border: solid 3px #000;
+}
+#hand1{
+  border: solid 3px #000;
+}
+#hand2{
+  border: solid 3px #000;
+}
+#hand3{
+  border: solid 3px #000;
+}
+#hand4{
+  border: solid 3px #000;
+}
+#hand5{
+  border: solid 3px #000;
+}
+#hand6{
+  border: solid 3px #000;
+}
+#hand7{
+  border: solid 3px #000;
+}
+
+
+#buttons{
+    float:left;
+}
+
+#sub-field0{
+  border: solid 3px #EEE;
+  width:160px;
+  height:90px;
+  overflow:hidden;
+  position:relative;
+}
+#sub-field1{
+  border: solid 3px #EEE;
+  width:160px;
+  height:90px;
+  overflow:hidden;
+  position:relative;
+}
+#sub-field2{
+  border: solid 3px #EEE;
+  width:160px;
+  height:90px;
+  overflow:hidden;
+  position:relative;
+}
+#sub-field3{
+  border: solid 3px #EEE;
+  width:160px;
+  height:90px;
+  overflow:hidden;
+  position:relative;
+}
+#sub-field4{
+  border: solid 3px #EEE;
+  width:160px;
+  height:90px;
+  overflow:hidden;
+  position:relative;
+}
+
+
+#log{
+  color:#EEE;
+  width:400px;
+  height:600px;
+  overflow:hidden;
+  position:relative;
+}
+
+

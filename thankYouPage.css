@@ -1,0 +1,82 @@
+
+
+body{
+/*	background-color: #EEE; */
+ background: -webkit-gradient(linear, left top, right bottom, from(#000),
+            color-stop(0.3, #066),
+            color-stop(0.5, #066),
+            color-stop(0.7, #000),
+            to(#066));
+
+	height: 800px;
+}
+
+.box h1{
+	text-shadow: 1px 1px 3px #000;
+	text-align:center;
+	position:relative;
+	top:80px;
+	font-family:serif;
+	font-size:220%;
+}
+
+.box {
+	width:70%;
+	height:200px;
+	background:#FFF;
+	margin:40px auto;
+}
+
+/*==================================================
+ * Effect 5
+ * ===============================================*/
+.effect5
+{
+  position: relative;
+}
+.effect5:before, .effect5:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+/*
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+*/
+  box-shadow: 0 35px 20px #EEE;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect5:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+
+h4{  
+    width: 150px;  
+    border: 1px solid #000;  
+    color: #FFF;  
+    text-align: center;  
+	background-color: #000;
+	font-family:serif;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}  
+
